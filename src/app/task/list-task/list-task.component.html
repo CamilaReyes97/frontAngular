@@ -1,0 +1,22 @@
+
+
+<div > <!-- Si hay usuarios que los muestre -->
+    <div  class="container mt-3 border border-dark p-3" *ngFor="let user of users">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Codigo</label>
+          <input [value]="user.code"  type="number" class="form-control"  aria-describedby="emailHelp">
+        </div>
+        <!-- modificamos el value de cada input -->
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Nombre</label>
+          <input [value]="user.userName"   type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email </label>
+            <input [value]="user.email"   type="email" class="form-control"  aria-describedby="emailHelp">
+          </div>
+        <button   type="button" class="btn btn-success">Modificar</button>
+        <button (click)="delete(user)"   type="button" class="btn btn-danger">Eliminar</button>
+    </div>
+</div>
+

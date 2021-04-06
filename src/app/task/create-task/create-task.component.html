@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Codigo</label>
+      <input [(ngModel)]="modeloUsuario.code" type="number" class="form-control"  aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Nombre</label>
+      <input [(ngModel)]="modeloUsuario.userName" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email </label>
+        <input [(ngModel)]="modeloUsuario.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    <button (click)="crear()" type="button" class="btn btn-primary">Registrar</button>
+</div>
